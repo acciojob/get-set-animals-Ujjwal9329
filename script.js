@@ -1,12 +1,12 @@
 // Parent class Animal
 class Animal {
   constructor(species) {
-    this.species = species; // Using a private variable with underscore
+    this._species = species; // Using a private variable with underscore
   }
 
   // Getter method for species
   get species() {
-    return this.species;
+    return this._species;
   }
 
   // Method to log the sound message
