@@ -1,28 +1,34 @@
-//complete this code
+// Parent class Animal
 class Animal {
-	constructor(species){
-		this.species = species;
-	}
-get species(){
-	return this.species;
-   }
-makeSound(){
-  console.log(`The ${this._species} makes a sound`);
+  constructor(species) {
+    this.species = species; // Using a private variable with underscore
+  }
 
-}
-	
+  // Getter method for species
+  get species() {
+    return this.species;
+  }
+
+  // Method to log the sound message
+  makeSound() {
+    console.log(`The ${this._species} makes a sound`);
+  }
 }
 
+// Subclass Dog
 class Dog extends Animal {
-	bar(){
-		console.log("woof");
-	}
+  // Method specific to Dog
+  bark() {
+    console.log("woof");
+  }
 }
 
+// Subclass Cat
 class Cat extends Animal {
-	purr(){
-		console.log("purr");
-	}
+  // Method specific to Cat
+  purr() {
+    console.log("purr");
+  }
 }
 
 // Do not change the code below this line
